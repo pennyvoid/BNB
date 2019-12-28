@@ -1,0 +1,24 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Variables
+@import "variables";
+
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+}
+.v-enter-active,
+.v-leave-active {
+    transition: opacity 0.5s;
+}
+.v-enter, .v-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+}
