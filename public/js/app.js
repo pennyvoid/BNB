@@ -2000,6 +2000,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -40078,9 +40079,9 @@ var render = function() {
                   "div",
                   { staticClass: "pt-2 pb-2 d-flex justify-content-between" },
                   [
-                    _c("span", [_vm._v("From:  " + _vm._s(item.dates.from))]),
+                    _c("span", [_vm._v("From: " + _vm._s(item.dates.from))]),
                     _vm._v(" "),
-                    _c("span", [_vm._v("To:  " + _vm._s(item.dates.to))])
+                    _c("span", [_vm._v("To: " + _vm._s(item.dates.to))])
                   ]
                 ),
                 _vm._v(" "),
@@ -40089,6 +40090,7 @@ var render = function() {
                     "button",
                     {
                       staticClass: "btn btn-sm btn-outline-secondary",
+                      attrs: { disabled: _vm.itemsInBasket == 0 },
                       on: {
                         click: function($event) {
                           return _vm.$store.dispatch(

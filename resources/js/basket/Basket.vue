@@ -75,14 +75,15 @@
             </div>
 
             <div class="pt-2 pb-2 d-flex justify-content-between">
-              <span>From:  {{ item.dates.from }}</span>
-              <span>To:  {{ item.dates.to }}</span>
+              <span>From: {{ item.dates.from }}</span>
+              <span>To: {{ item.dates.to }}</span>
             </div>
 
             <div class="pt-2 pb-2 text-right">
               <button
                 class="btn btn-sm btn-outline-secondary"
                 @click="$store.dispatch('removeFromBasket', item.bookable.id)"
+                :disabled="itemsInBasket== 0"
               >
                 <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
               </button>
